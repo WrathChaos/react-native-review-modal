@@ -1,20 +1,20 @@
-<img alt="React Native Review Modal" src="https://github.com/WrathChaos/react-native-dynamic-text-loading/blob/master/assets/logo.png" width="1050"/>
+<img alt="React Native Review Modal" src="https://github.com/WrathChaos/react-native-review-modal/blob/master/assets/logo.png" width="1050"/>
 
-Dynamically changes the text while loading screen for React Native. This is the loading like Heartstone and Discord's dynamically changes loading texts :)
+Review Modal with dynamic rate system and comment feature for React Native
 
-[![npm version](https://img.shields.io/npm/v/react-native-dynamic-text-loading.svg)](https://www.npmjs.com/package/react-native-dynamic-text-loading)
-[![npm](https://img.shields.io/npm/dt/react-native-dynamic-text-loading.svg)](https://www.npmjs.com/package/react-native-dynamic-text-loading)
+[![npm version](https://img.shields.io/npm/v/react-native-review-modal.svg)](https://www.npmjs.com/package/react-native-review-modal)
+[![npm](https://img.shields.io/npm/dt/react-native-review-modal.svg)](https://www.npmjs.com/package/react-native-review-modal)
 ![Platform - Android and iOS](https://img.shields.io/badge/platform-Android%20%7C%20iOS-blue.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 <p align="center">
-<img alt="React Native Review Modal" src="https://github.com/WrathChaos/react-native-dynamic-text-loading/blob/master/assets/Screenshots/React-Native-Review-Modal.gif.gif" width="49.7%" />
+<img alt="React Native Review Modal" src="https://github.com/WrathChaos/react-native-review-modal/blob/master/assets/Screenshots/React-Native-Review-Modal.gif.gif" width="49.7%" />
 </p>
 
 <p align="center">
-<img alt="React Native Gradient Header" src="https://github.com/WrathChaos/react-native-gradient-header/blob/master/assets/Screenshots/example.png" width="49.7%" />
-<img alt="React Native Gradient Header" src="https://github.com/WrathChaos/react-native-gradient-header/blob/master/assets/Screenshots/example1.png" width="49.7%" />
+<img alt="React Native Review Modal" src="https://github.com/WrathChaos/react-native-gradient-header/blob/master/assets/Screenshots/example.png" width="49.7%" />
+<img alt="React Native Review Modal" src="https://github.com/WrathChaos/react-native-gradient-header/blob/master/assets/Screenshots/example1.png" width="49.7%" />
 </p>
 
 ## Installation
@@ -23,30 +23,52 @@ Add the dependency:
 
 ### React Native:
 
-```ruby
-npm i react-native-dynamic-text-loading
+```js
+npm i react-native-review-modal
 ```
 
 ## Peer Dependencies
 
 ###### IMPORTANT! You need install them.
 
-```
+```js
 "react": ">= 16.x.x",
 "react-native": ">= 0.55.x",
-"react-native-spinkit": ">= 1.3.0"
+"react-native-modal": ">= 11.1.0",
+"react-native-star-rating": ">= 1.1.0",
+"react-native-vector-icons": ">= 6.6.0",
+"react-native-linear-gradient": ">= 2.5.4",
+"@freakycoder/react-native-text-area": ">= 0.0.11"
 ```
 
 ## Basic Usage
 
 ```js
-import Loading from "react-native-dynamic-text-loading";
+import ReviewModal from "react-native-review-modal";
 
-<Loading list={[
-    "Assets are loading...",
-    "Data is fetching...",
-    "Running an algorithm..."]
-}/>
+constructor(props) {
+  super(props);
+  this.state = {
+    starCount: 3.6
+  };
+}
+
+onStarRatingPress(rating) {
+  this.setState({
+    starCount: rating
+  });
+}
+
+render() {
+  return (
+    <ReviewModal
+      starRating={this.state.starCount}
+      onStarRatingPress={rating => {
+        this.onStarRatingPress(rating);
+      }}
+    />
+  );
+}
 ```
 
 ## Configuration - Props
