@@ -10,7 +10,7 @@ Review Modal with dynamic rate system and comment feature for React Native
 
 <p align="center">
 <img alt="React Native Review Modal" src="https://github.com/WrathChaos/react-native-review-modal/blob/master/assets/Screenshots/React-Native-Review-Modal.gif" width="49.7%" />
-<img alt="React Native Review Modal" src="https://github.com/WrathChaos/react-native-review-modal/blob/master/assets/Screenshots/example.png" width="40%" height="720" />
+<img alt="React Native Review Modal" src="https://github.com/WrathChaos/react-native-review-modal/blob/master/assets/Screenshots/example.png" width="40%" height="730" />
 </p>
 
 
