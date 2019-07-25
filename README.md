@@ -9,12 +9,12 @@ Review Modal with dynamic rate system and comment feature for React Native
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 <p align="center">
-<img alt="React Native Review Modal" src="https://github.com/WrathChaos/react-native-review-modal/blob/master/assets/Screenshots/React-Native-Review-Modal.gif.gif" width="49.7%" />
+<img alt="React Native Review Modal" src="https://github.com/WrathChaos/react-native-review-modal/blob/master/assets/Screenshots/React-Native-Review-Modal.gif" width="49.7%" />
 </p>
 
 <p align="center">
-<img alt="React Native Review Modal" src="https://github.com/WrathChaos/react-native-gradient-header/blob/master/assets/Screenshots/example.png" width="49.7%" />
-<img alt="React Native Review Modal" src="https://github.com/WrathChaos/react-native-gradient-header/blob/master/assets/Screenshots/example1.png" width="49.7%" />
+<img alt="React Native Review Modal" src="https://github.com/WrathChaos/react-native-review-modal/blob/master/assets/Screenshots/example.png" width="49.7%" />
+<img alt="React Native Review Modal" src="https://github.com/WrathChaos/react-native-review-modal/blob/master/assets/Screenshots/example1.png" width="49.7%" />
 </p>
 
 ## Installation
