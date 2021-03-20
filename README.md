@@ -81,7 +81,16 @@ render() {
 | textColor        |  color  |        white         | change the dynamic text's color                                                            |
 | textStyle        |  style  |       default        | set your own style for text                                                                |
 | numberOfLines    | number  |          2           | RECOMMENDED! Do NOT change the number of lines, users cannot read long texts below 1.5 sec |
-
+| reviewTitle      | string  | "How was your experience?" | change the title above stars                                                                    |
+| textAreaPlaceholder | string  | "Write your review..."  | change the text area placeholder                                                                |
+| submitButtonTitle    | string  |          "Submit"      | change  the submit button title|
+| submitButtonStyle    | object  |          default           | set your own style for submit button |
+| submitButtonGradientColors    | array  |          ["#5f2c82", "#49a09d"]          | change the button gradient colors |
+| textInputStyle    | object  |          default         | set your own style for input |
+| textAreaStyle    | number  |          default          | set your own style for text area container |
+| onChangeText    | function  |          ()=>{}           | set your own function for change text action |
+| onPressSubmit    | function  |          ()=>{}           |  set your own function for submit button action |
+| isReviewModalVisible    | boolean  |          false           | Show the modal?  |
 
 ## Author
 
